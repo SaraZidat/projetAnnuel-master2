@@ -165,7 +165,7 @@ let AdminService = class AdminService {
     constructor(httpClient) {
         this.httpClient = httpClient;
         //uri = 'http://localhost:3000';
-        this.uri = 'https://projet-annuel-node.herokuapp.com';
+        this.uri = 'https://projetannuel-master2.herokuapp.com/';
     }
     get currentAdmin() {
         return this.authenticatedAdmin = JSON.parse(localStorage.getItem('admin'));

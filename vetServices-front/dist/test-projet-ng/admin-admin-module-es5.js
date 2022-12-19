@@ -315,7 +315,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         this.httpClient = httpClient; //uri = 'http://localhost:3000';
 
-        this.uri = 'https://projet-annuel-node.herokuapp.com';
+        this.uri = 'https://projetannuel-master2.herokuapp.com/';
       }
 
       _createClass(AdminService, [{

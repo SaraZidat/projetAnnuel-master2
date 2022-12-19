@@ -1809,7 +1809,7 @@ let BarService = class BarService {
     //uri = 'http://localhost:3000';
     constructor(httpClient) {
         this.httpClient = httpClient;
-        this.uri = 'https://projet-annuel-node.herokuapp.com';
+        this.uri = 'https://projetannuel-master2.herokuapp.com/';
     }
     add(BarCreate) {
         return this.httpClient.post(`${this.uri}/api/cabinets`, BarCreate)
@@ -3340,7 +3340,7 @@ let UserService = class UserService {
     constructor(httpClient) {
         this.httpClient = httpClient;
         //uri = 'http://localhost:3000';
-        this.uri = 'https://projet-annuel-node.herokuapp.com';
+        this.uri = 'https://projetannuel-master2.herokuapp.com/';
     }
     get currentUser() {
         return this.authenticatedUser = JSON.parse(localStorage.getItem('user'));
