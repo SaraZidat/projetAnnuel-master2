@@ -1,0 +1,12 @@
+<div class="spaced" data-testid="filtering">
+  <input type="text" [(ngModel)]="filterInput" name="filter-input" (keyup)="onFilter()" [placeholder]="
+    filterPlaceholder" autocomplete="off" class="form-control"/>
+  <button type="button" class="btn btn-success"(click)="reset()">clear</button>
+</div>
+<section *ngIf="veterinaires$ | async as veterinaires; else loading" data-testid="display-veterinaires">
+  <fbapp-veterinaire-thumbnail *ngFor="let veterinaire of veterinaires" [veterinaire]="veterinaire" (click)="onSelectVeterinaires(veterinaire._id)">
+  </fbapp-veterinaire-thumbnail>
+</section>
+<ng-template #loading>
+  <fbapp-loader center></fbapp-loader>
+</ng-template>

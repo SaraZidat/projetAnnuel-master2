@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Veterinaire created</h1>
+    <a href="/veterinaires">Back to veterinaires</a>
+    <p>L'email est <%= veterinaire.email %></p>
+    <% if (veterinaire.firstname) { %>
+      <p>Le nom est <%= veterinaire.firstname %> <%= veterinaire.lastname %></p>
+    <% } %>
+  </body>
+</html>
